@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar{
+  display: flex;
+  padding: 1rem;
+}
+
+
+
+
+.menu-login{
+  display: flex;
+}
+
+.sitename{
+  font-size: 25px;
+  width: 80vw;
+  margin: auto;
+}
+
+.hero{
+  background-image: linear-gradient(#0cd,#0cf);
+}
+
+.hero-section{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-s{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation-name: login-open;
+  animation-duration: 0ms;
+  background-color: transparent;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.login{
+  background-color: ghostwhite;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 35%;
+  opacity: 1;
+  border-radius: 1rem;
+  position: relative;
+}
+
+@keyframes login-open{
+  0%{ opacity:0; }
+  100%{ opacity: 1; }
+}
+
+.login li .link{
+  font-size: 25px;
+}
+
+.login-close{
+  
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  
+  font-size: larger;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+}
+
+.login-d{
+  cursor: pointer;
+  font-size: 20px;
+  background-color: lightblue;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width:768px){
+  .sitename{
+    width: 50vw;
+  }
+  .login{
+    width: 90%;
+    height: 30%;
+  }
+  .login-s{
+    width: 100vw;
+  }
+  .login-close{
+    width: 10vw;
+  }
+
+  @keyframes login-open{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+  }
+}
+
+label{
+  margin-top: .5em;
+}
+
+input:not(.login-button){
+  height: 1.5em;
+  width: 15em;
+}
+
+.login-button{
+  font-size: 20px;
+  background-color: lightblue;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.menu-s{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 75vw;
+  height: 100vh;
+  animation-name: menu-open;
+  animation-duration: 200ms;
+  background-color: burlywood;
+}
+
+.menu{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes menu-open{
+  0%{ width:0; }
+  100%{ width: 75vw; }
+}
+
+.menu li .link{
+  font-size: 25px;
+}
+
+.menu-close{
+  width: 5vw;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-d{
+  cursor: pointer;
+  font-size: 20px;
+  background-color: lightblue;
+}
+
+@media only screen and (max-width:768px){
+  .menu-s{
+    width: 90vw;
+  }
+  .menu-close{
+    width: 10vw;
+  }
+
+  @keyframes menu-open{
+    0%{ width: 0vw; }
+    100%{ width: 90vw; }
+  }
+}
